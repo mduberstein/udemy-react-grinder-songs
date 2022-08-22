@@ -9,8 +9,7 @@ class SongList extends Component {
 
 // State_To_Props mapping_BEGIN
 const mapStateToProps = state => {
-  console.log(state);
-  return state;
+  return {songs: state.songs};
 };
 
 export default connect(mapStateToProps)(SongList);
