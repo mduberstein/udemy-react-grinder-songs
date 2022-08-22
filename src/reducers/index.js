@@ -16,6 +16,9 @@ const selectedSongReducer = (selectedSong = null, action) => {
   return selectedSong;
 };
 
+// return value of this call is the Redux Store representing 
+// the Application state - the object with properties named the same
+// as the keys of the object argument passed in: songs and selectingSong
 export default combineReducers({
   songs: songsReducer,
   selectedSong: selectedSongReducer
