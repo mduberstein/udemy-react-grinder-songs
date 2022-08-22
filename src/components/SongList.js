@@ -24,14 +24,14 @@ class SongList extends Component {
   }
 
   render() {
-    console.log("SongList's props: ", this.props);
+    console.log("SongList props: ", this.props);
     return <div className="ui divided list">{this.renderList()}</div>;
   }
 }
 
 // State_To_Props mapping_BEGIN
 const mapStateToProps = (state) => {
-  console.log("Application State:", state);
+  console.log("Application state:", state);
   return { songs: state.songs };
 };
 
