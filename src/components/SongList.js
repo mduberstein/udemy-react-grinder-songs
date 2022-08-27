@@ -44,5 +44,5 @@ export default connect(mapStateToProps, { selectSong })(SongList);
 //    this.props.selectSong(song) calls store.dispatch(selectSong(song))
 // to the props of the component
 // so in pseudolanguage the props are
-// this.props === {{songs: state.songs}, selectSong: /*store.dispatch(selectSong(...args))*/} or in syntax of ES2015
-// this.props === {{songs: state.songs}, selectSong}
+// this.props === {songs: state.songs, selectSong: /*store.dispatch(selectSong(...args))*/} or in syntax of ES2015
+// this.props === {songs: state.songs, selectSong}
